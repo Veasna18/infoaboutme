@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Talk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Image/Logo.png">
+</head>
+<body>
+    <nav class="menu">
+        <div class="avata">
+            <img src="Image/icon.jpg" alt="wt">
+        </div>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="showSection('pageinfo')">Home</a></li>
+            <li><a href="javascript:void(0)" onclick="showSection('contact')">Contact</a></li>
+            <li><a href="javascript:void(0)" onclick="showSection('about')">About</a></li>
+            <li><a href="javascript:void(0)" onclick="showSection('service')">Service</a></li>
+        </ul>
+        <button class="dark-toggle" onclick="toggleDark()" id="mode-btn">🌙</button>
+    </nav>
+
+    <div class="wrap-page">
+        <section id="pageinfo" class="page">
+            <h2>Hello! Welcome to <span>We Talk</span></h2>
+            <p class="description">
+                This is a platform dedicated to open conversations and sharing ideas. 
+                I built this project back in 2022 while I was a high school student 
+                to practice my web development skills.
+            </p>
+            <button class="btn-explore" onclick="showSection('contact')" >Explore More</button>
+        </section>
+
+        <section id="contact" class="page-contact">
+            <h2>Connect with <span>We Talk</span></h2>
+            <div class="social-grid">
+                <a href="https://www.facebook.com/profile.php?id=61581495545562" class="btn-social"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://www.youtube.com/@WeTalkTechKH" class="btn-social"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="https://t.me/PUSNA18" class="btn-social"><i class="fab fa-telegram-plane"></i> Telegram</a>
+                <a href="https://github.com/Veasna18" class="btn-social"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/om-veasna-32b223390/" class="btn-social"><i class="fab fa-linkedin"></i> inkedin</a>
+            </div>
+        </section>
+        
+        <section id="about" class="page">
+            <h2>About <span>Me</span></h2>
+            <p class="description">
+                I'm <strong>Veasna</strong>, I'm 18 years old. I am a student at <strong>BELTEI INTERNATIONAL UNIVERSITY</strong>, 
+                majoring in Networking and Cybersecurity. I'm passionate about building secure and user-friendly web applications.
+
+                <br><br><strong>Work Experience: </strong><br><strong>Page Administrator | 2024 – Present</strong> <br>
+                •	Optimized social media content strategy, resulting in improved audience engagement and consistent brand presence. <br>
+                •	Managed end-to-end technical setups for advertising campaigns and account security.
+
+                <br><strong>Teaching Assistant | 2023 – 2024</strong><br>
+                •	Supported lead instructors in lesson preparation and student assessment. <br>
+                •	Facilitated small group discussions to enhance students' understanding of core concepts.
+            </p>
+            <button class="btn-explore"onclick="showSection('service')">My Journey</button>
+        </section>
+
+        <section id="service" class="page">
+            <h2>Services on <span>We Talk</span></h2>
+            <p class="description">Coming soon...</p>
+            <button class="btn-explore">Stay Tuned</button>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-copy">
+                &copy; 2026 We Talk | Built by <strong>Veasna</strong>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.facebook.com/profile.php?id=61581495545562"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@WeTalkTechKH"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/om-veasna-32b223390/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://t.me/PUSNA18"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Script.js" ></script>
+</body>
+</html>
